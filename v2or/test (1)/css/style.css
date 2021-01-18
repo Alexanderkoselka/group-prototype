@@ -1,0 +1,619 @@
+body{
+    font-family: 'Raleway', sans-serif !important;
+    width: 100%;
+    height: 100vh;
+    float: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.filter_bar{
+    width: 20%;
+    top: 49px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 3;
+}
+
+.header_bar{
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    height: 49px;
+    -webkit-box-shadow: 0px 1px 2px 0px #5a5a5a;
+    box-shadow: 0px 1px 2px 0px #5a5a5a;
+}
+
+.top_bar{
+    width: 100%;
+    height: 4.5vh;
+    background-color: black;
+    color: white;
+    float: left;
+}
+
+.vl_line{
+    float: left;
+    border-left: 1px solid #bdc3c7;
+    height: 7vh;
+    width: 1%;
+    margin: 0;
+        margin-top: -3vh;
+    margin-left: 13%;
+}
+
+.ui-widget-content{
+    background: linear-gradient(-90deg, rgba(255,0,0,1) 0%, rgba(255,102,0,1) 33%, rgba(255,247,0,1) 66%, rgba(9,255,0,1) 100%) !important;
+    opacity: 0.5;
+}
+
+.ui-widget-content2{
+    background: rgb(180, 180, 180) !important;
+}
+
+.ui-widget-header{
+    background: none;
+}
+
+.eye_icon{
+    float: left;
+    width: 11%;
+    height: auto;
+    margin-top: -2vh;
+    margin-left: 5%;
+}
+
+.eye_icon img{
+    width: 100%;
+    height: auto;
+}
+
+.parking_icon{
+    float: left;
+    width: 8%;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 2vh;
+    
+}
+
+h3{
+    float: left;
+    margin-left: 4%;
+    width: 96%;
+    font-weight: normal;
+}
+
+.parking_icon img{
+    width: 100%;
+    height: auto;
+}
+
+.caution_card{
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0.6vh;
+    margin-bottom: 2vh;
+    height: 9h;
+    background-color: white;
+    border-radius: 3%;
+}
+
+.filter_card{
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0.6vh;
+    margin-bottom: 2vh;
+    height: auto;
+    background-color: white;
+    border-radius: 3%;
+}
+
+#amount{
+    float: left;
+    width: 90%;
+    margin: 5%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.filter_card h2{
+    width: 80%;
+    float: left;
+}
+
+.first_card{
+    margin-top: 2.3vh;
+    height:auto;
+}
+
+
+.caution_max{
+    overflow-y: scroll !important;
+    height: 30vh !important;
+}
+
+.filter_max{
+    overflow-y: scroll !important;
+    height: 50vh !important;
+}
+
+.caution_card p, h2{
+    float: left;
+    width: 60%;
+    margin-left: 3%;
+}
+
+.caution_card p{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 1.1em;
+}
+
+.caution_card h2{
+    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+}
+
+.mapboxgl-map{
+    font-family: 'Raleway', sans-serif !important;
+}
+
+button{
+    font-family: 'Raleway', sans-serif !important;
+}
+
+h1{
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    float: left;
+    text-align: center;
+
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.data_screen {
+    position: absolute;
+    width: 30%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 2%;
+    z-index: 1;
+    right: 1%;
+    top: 8%;
+    -webkit-box-shadow: 0px 1px 2px 0px #5a5a5a;
+    box-shadow: 0px 1px 2px 0px #5a5a5a;
+}
+
+.line_one{
+    float: left;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 1vh;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.4em;
+    color: black;
+}
+
+.filter_overlay {
+    position: absolute;
+    width: 3%;
+    height: 40vh;
+    background-color: white;
+    z-index: 1;
+    left: 1%;
+    top: 8%;
+    -webkit-box-shadow: 0px 1px 2px 0px #5a5a5a;
+    box-shadow: 0px 1px 2px 0px #5a5a5a;
+    border-radius: 2%;
+}
+
+.collapsible {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active{
+    background-color: white;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f8f8f8;
+    -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.3);
+}
+
+hr.solid {
+    border-top: 1px solid #eaeaea;
+    width: 80%;
+    margin-top: 2vh;
+}
+
+.first_line{
+    margin-top: 5vh !important;
+}
+
+
+.filter-ctrl {
+
+    float: left;
+    z-index: 1;
+    width: 70%;
+    height: auto;
+}
+
+.percentage_indicator{
+    float: left;
+    width: 5%;
+    margin: 5%;
+    margin-top: -.8vh;
+}
+
+input{
+    text-align: center;
+}
+
+    .filter-ctrl input[type='text'] {
+    width: 100%;
+    border: 0;
+    background-color: #fff;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    width: 180px;
+    }
+
+
+    #groen{
+        background-repeat: no-repeat;
+    }
+
+    #rood{
+        background-repeat: no-repeat;
+    }
+
+    #oranje{
+        background-repeat: no-repeat;
+    }
+
+    #geel{
+        background-repeat: no-repeat;
+    }
+
+
+
+
+/*                 ----------- CSS VAN COEN  --------------                  */
+
+
+
+
+.pop-ups{
+    transform:none !important;
+    top: 10%;
+    left: 83%;
+
+
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-center .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip{
+    display:none !important;
+}
+
+.compare-buttons{
+    position: absolute;
+    display: flex;
+    opacity: 10%;
+    right: 5%;
+    bottom: 5%;
+
+}
+
+.compare-button{
+
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    color: white;
+}
+
+.asset-button{
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid rgb(235, 235, 235);
+    color: black;
+}
+
+#masterCompareBtn {
+    margin-left: 10px;
+    cursor: not-allowed;
+}
+
+.mapboxgl-popup-content {
+    position: relative;
+    height: 350px;
+    width: 275px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: Raleway, Geneva, Tahoma, sans-serif;
+    opacity: 1;
+}
+
+.popup-inner{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    height: 350px;
+    width: 250px;
+    background-color: white;
+
+}
+
+.popup-title {
+    position: relative;
+    background-color:white;
+    width: 250px;
+    height: auto;
+    padding: 15px 0;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.popup-title * {
+    display: inline;
+    vertical-align: middle;
+}
+
+.popup-bar {
+    position: relative;
+    background-color:white;
+    width: 250px;
+    height: auto;
+    padding: 30px 0;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.bar-container{
+    opacity: 0.5;
+    position: relative;
+    width: 90%;
+    height: 15px;
+    background-color: grey;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin: auto;
+    margin-bottom: 20px;
+    background: rgb(255,0,0);
+    background: linear-gradient(-90deg, rgba(255,0,0,1) 0%, rgba(255,102,0,1) 33%, rgba(255,247,0,1) 66%, rgba(9,255,0,1) 100%);
+}
+
+.bar-ozon {
+    background: rgb(80, 80, 80);
+}
+
+.bar-container::before{
+    content: "0";
+    position: absolute;
+    top: 25px;
+}
+
+.bar-container::after{
+    content: "100";
+    position: absolute;
+    right: 0px;
+    top: 25px;
+}
+
+.bar-inner {
+    height: 100%;
+    background-color: #E8E8E8;
+    float: right;
+    width: 100%;
+}
+
+#dataNumber {
+    display: table;
+    position: absolute;
+    top: 30px;
+    left: 0%;
+    color: black;
+}
+
+.dataNumberOzon {
+    display: table;
+    position: absolute;
+    top: -25px !important;
+    left: 0%;
+    color: black;
+}
+
+.transform {
+    transition: all 0.2s ease;
+}
+
+.popup-list {
+    display: flex;
+    width: 250px;
+    height: auto;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.popup-list #column2{
+    font-weight: bold;
+}
+
+.column {
+    flex: 50%;
+}
+.popup-actions{
+    margin: 20px 0;
+}
+.popup-actions a{
+
+    float: right;
+}
+
+.categories {
+    height: auto;
+    width: 75%;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: 15% 25% 40% 20%;
+    grid-gap: 0.7rem;
+    opacity: 0.6;
+
+}
+
+.cat-item {
+    height: 5px;
+    width: auto;
+    background-color: grey;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+#green {
+    background: green;
+}
+#green::after{
+    content: "goed";
+    position: relative;
+    bottom: -10px;
+    left: -3px;
+}
+#yellow {
+    background: yellow;
+}
+#yellow::after{
+    content: "matig";
+    position: relative;
+    bottom: -10px;
+    left: 7px;
+}
+#orange {
+    background: orange;
+}
+#orange::after{
+    content: "onvoldoende";
+    position: relative;
+    bottom: -10px;
+    left: 0px;
+}
+#red {
+    background: red;
+}
+#red::after{
+    content: "slecht";
+    position: relative;
+    bottom: -10px;
+    left: 2px;
+}
+
+.fix{
+
+  margin-top: 15px;
+  margin-bottom: 35px;
+
+}
+
+.bar-ozon::before{
+    content: "";
+    position: absolute;
+    top: 25px;
+}
+
+.bar-ozon::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+}
+
+
+.ui-slider-handle {
+    border-radius: 50%;
+    color: red;
+}
+
+
+
+.ui-state-default { 
+    background-color:black!important;
+}
